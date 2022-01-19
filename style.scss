@@ -1,5 +1,6 @@
 
-$navfont-family: Helvetica; 
+$navfont-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$font-familybody:Arial, Helvetica, sans-serif;
 
 
 
@@ -10,20 +11,93 @@ $navfont-family: Helvetica;
 }
 
 body {
-  background-color: #C9A577;
+  background: white;
+  font-family: $font-familybody;
+  color:black; 
+  line-height: 1.8;
+  height: 100vh;
+}
+
+.scrollcontainer {
+  width: 100vw;
+  height: 100vh;
+  /* CSS smooth scroll */
 }
 
 .nav-bar {
   text-align: end;
+  background-color: rgb(247, 238, 238, 0.9);
+  border-bottom:white 2px solid;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  z-index:1;
+  display: flex;
+  justify-content: space-around;
   
   ul {
      display: flex;
+     width: 100%;
      justify-content: space-around;
      list-style: none;
+     align-items: center;
   }
 
-  
+   li {
+     font-size: 15px;
+     
 
+   }
+
+   a:hover {
+   color: rgb(177, 7, 7);
+  }
+   a {
+    text-decoration: none;
+    color: black;
+   }
 
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    color:whitesmoke;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    
+  }
+  h3 {
+    font-size: 3rem;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    
+  }
+
+}
+
+  #Home{
+    background: url('./picture/graduation\ pic2\ \(3\).jpg') no-repeat center/100% ;
+  }
