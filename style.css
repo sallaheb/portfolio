@@ -78,11 +78,26 @@ section h3 {
   color: black;
   font-weight: bold;
 }
-section h4 {
-  font-size: 0.8rem;
-  text-align: center;
-  color: black;
-  font-weight: bold;
+
+.container-foraboutsection {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  height: 360px;
+}
+.container-foraboutsection .text-area {
+  margin-left: 5%;
+  width: 420px;
+  height: 300px;
+}
+
+.imageabout {
+  display: block;
+  width: 420px;
+  height: 300px;
+  align-self: flex-start;
+  border-radius: 50px;
+  border: black 3px solid;
 }
 
 #Home {
