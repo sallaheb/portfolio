@@ -30,8 +30,6 @@ body {
   position: fixed;
   top: 0%;
   z-index: 1;
-  display: flex;
-  justify-content: space-around;
 }
 .nav-bar ul {
   display: flex;
@@ -57,7 +55,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 615px;
+  height: 844px;
   scroll-snap-align: center;
 }
 section h1 {
@@ -71,6 +69,7 @@ section h2 {
   text-align: center;
   color: whitesmoke;
   font-weight: bold;
+  margin: 1.5%;
 }
 section h3 {
   font-size: 3rem;
@@ -88,33 +87,33 @@ section h3 {
 .container-foraboutsection {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  height: 370px;
+  height: 620px;
 }
 .container-foraboutsection .text-area {
   display: block;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
-  width: 500px;
-  height: 300px;
+  width: 350px;
+  height: 264px;
 }
 
 .imageabout {
   display: block;
-  width: 500px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   align-self: flex-start;
   border-radius: 50px;
   border: black 3px solid;
-  margin-top: 0%;
-  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 20%;
 }
 
 .image-project {
-  width: 90px;
-  height: 80px;
+  width: 120px;
+  height: 140px;
   border: 2px red solid;
 }
 
@@ -127,17 +126,17 @@ section h3 {
 .projectcontainers {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  width: 500px;
-  height: 80px;
+  width: 360px;
+  height: 140px;
   border: 1px black solid;
 }
 
 .projectcontainers__project {
   border: 2px black solid;
-  width: 420px;
-  height: 75px;
+  width: 240px;
+  height: 139px;
 }
 
 .expertise-section {
@@ -148,18 +147,18 @@ section h3 {
 
 .coding-skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   border: 2px black solid;
-  height: 400px;
-  width: 600px;
+  height: 620px;
+  width: 300px;
   align-items: center;
   align-content: center;
   justify-items: center;
 }
 
 .logo-images {
-  width: 140px;
-  height: 170px;
+  width: 130px;
+  height: 90px;
 }
 
 #logotext {
@@ -175,12 +174,17 @@ section h3 {
 section.contact-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 section h3 {
   text-justify: auto;
 }
 section p {
   text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  margin: 1%;
 }
 
 #Home {
