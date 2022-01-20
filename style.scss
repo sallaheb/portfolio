@@ -202,6 +202,29 @@ section {
   font-family:$navfont-family;
 } 
 
+.email-icon {
+  width: 140px;
+  height: 170px;
+}
+
+
+
+section {
+  &.contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+    h3 {
+      text-justify: auto;
+
+   }
+        h4{
+
+        }
+          p {
+            text-align: center;
+          } 
+}
 
 
   #Home{
