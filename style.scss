@@ -175,6 +175,35 @@ section {
   }
 }
 
+.expertise-section {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+
+.coding-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 2px black solid;
+  height: 400px;
+  width: 600px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.logo-images {
+  width: 140px;
+  height: 170px;
+}
+
+#logotext {
+  font-size: 20px;
+  font-family:$navfont-family;
+} 
+
+
+
   #Home{
     background: url('./picture/graduation\ pic2\ \(3\).jpg') no-repeat center center/ cover fixed;
 
