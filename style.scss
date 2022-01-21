@@ -1,5 +1,6 @@
 $font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 $font-familybody: Arial, Helvetica, sans-serif;
+$border1pxblack: 1px black solid; 
 
 @mixin displaygridaligntitemcenter {
 display: grid;
@@ -10,6 +11,22 @@ align-items: center;
   display: grid;
   align-items: flex-end; 
 }
+
+@mixin displayflexdirectionrow {
+  display: flex;
+  flex-direction: row; 
+}
+
+@mixin displayflexdirectioncolumn {
+  display: flex;
+  flex-direction: column; 
+}
+
+@mixin displaygridaligncontentcenter {
+  display: grid;
+  align-content: center;
+}
+
 
 * {
   margin: 0;
@@ -65,8 +82,7 @@ body {
 }
 
 section {
-  display: flex;
-  flex-direction: column;
+  @include displayflexdirectioncolumn;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -127,15 +143,16 @@ section {
 // }
 
 .projectcontainers {
-  display: flex;
-  flex-direction: row;
+  @include displayflexdirectionrow;
   justify-content: flex-end;
   align-items: center;
   width: 360px;
   height: 140px;
-  border: 1px black solid;
+  border: $border1pxblack;
   margin-top: 6%;
 }
+
+// BEM notations //
 
 .projectcontainers {
   &__project {
@@ -147,16 +164,15 @@ section {
 
 // .expertise-section {
 //   justify-content: space-evenly;
-// }
+// removed not needed //
 
 .coding-skills {
-  display: grid;
+  @include displaygridaligncontentcenter;
   grid-template-rows: 1fr 1fr;
   border: 2px black solid;
   height: 620px; // change  media Query//
   width: 300px; // change  media Query//
   align-items: center;
-  align-content: center;
   justify-items: center;
   margin-top: 10%;
 
@@ -213,20 +229,17 @@ section {
       margin-bottom: 15%;
     }
     
-  }
-  
+  } 
 
   .about-section {
-    display: grid;
+    @include displaygridaligncontentcenter;
     width: 100vw;
     justify-content: space-evenly;
-    align-content: center;
 
   }
 
   .container-foraboutsection {
-    display: flex;
-    flex-direction: row;
+    @include displayflexdirectionrow;
     justify-content: space-evenly;
     align-items: flex-start;
     width:100vw;
