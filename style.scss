@@ -1,6 +1,6 @@
 $font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 $font-familybody: Arial, Helvetica, sans-serif;
-$border1pxblack: 1px black solid; 
+$border1pxblack: 1px black solid; //need more of
 
 @mixin displaygridaligntitemcenter {
 display: grid;
@@ -259,6 +259,7 @@ section {
     @include displaygridaligntitemcenter;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
+    justify-items: center;
   }
 
   .expertise-section {
@@ -286,7 +287,8 @@ section {
 
   .contact-section {
     @include displaygridaligntitemcenter;
-    grid-template-rows: 130px 140px 200px;  
+    grid-template-rows: 130px 140px 200px;
+    justify-items: center;  
   }
 
 }

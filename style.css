@@ -204,6 +204,7 @@ section h3 {
     align-items: center;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
+    justify-items: center;
   }
 
   .expertise-section {
@@ -234,5 +235,6 @@ section h3 {
     display: grid;
     align-items: center;
     grid-template-rows: 130px 140px 200px;
+    justify-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
