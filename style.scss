@@ -1,5 +1,15 @@
-$navfont-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+$font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 $font-familybody: Arial, Helvetica, sans-serif;
+
+@mixin displaygridaligntitemcenter {
+display: grid;
+align-items: center;
+}
+
+@mixin displaygridalignitemflexend {
+  display: grid;
+  align-items: flex-end; 
+}
 
 * {
   margin: 0;
@@ -83,21 +93,7 @@ section {
     color: black;
     font-weight: bold;
   }
-
-  // h4 {
-  //   font-size: 0.8rem;
-  //   text-align: center;
-  //   color: black;
-  //   font-weight: bold;
-
-  // }
 }
-
-// .about-section {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-evenly;
-// }
 
 .container-foraboutsection {
   display: flex;
@@ -175,7 +171,7 @@ section {
 
 #logotext {
   font-size: 20px;
-  font-family: $navfont-family;
+  font-family: $font-family;
 }
 
 .email-icon {
@@ -235,33 +231,27 @@ section {
     align-items: flex-start;
     width:100vw;
 
-
     .imageabout {
       width: 400px;
     }
   }
   
   .project-section {
+    @include displaygridalignitemflexend;
     width: 100vw;
-    display: grid;
     grid-template-rows: 130px 320px;
-    align-items: flex-end;
-
   }
 
-
   .grid-containerfordestopview {
-    display: grid;
+    @include displaygridaligntitemcenter;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
-    justify-items: center;
   }
 
   .expertise-section {
-    display: grid;
+    @include displaygridalignitemflexend;
     height: 100vw;
     grid-template-rows: 130px 320px;
-    align-items: flex-end;
   }
 
   .coding-skills {
@@ -282,12 +272,8 @@ section {
   }
 
   .contact-section {
-    display: grid;
-    grid-template-rows: 130px 140px 200px;
-    justify-items: center;
-    
-
-    
+    @include displaygridaligntitemcenter;
+    grid-template-rows: 130px 140px 200px;  
   }
 
 }
