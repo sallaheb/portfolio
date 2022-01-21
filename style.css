@@ -229,4 +229,10 @@ section h3 {
     font-size: 26px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
+
+  .contact-section {
+    display: grid;
+    grid-template-rows: 130px 140px 200px;
+    justify-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

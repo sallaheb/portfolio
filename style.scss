@@ -281,4 +281,13 @@ section {
     font-family: $navfont-family;
   }
 
-} 
+  .contact-section {
+    display: grid;
+    grid-template-rows: 130px 140px 200px;
+    justify-items: center;
+    
+
+    
+  }
+
+}
