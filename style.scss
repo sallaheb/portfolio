@@ -38,7 +38,7 @@ body {
   font-family: $font-familybody;
   color: black;
   line-height: 1.8;
-  height: 100vh;
+  height:auto;
   overflow: hidden;
 }
 
@@ -235,6 +235,7 @@ section {
     @include displaygridaligncontentcenter;
     width: 100vw;
     justify-content: space-evenly;
+    padding-top: 2%;
 
   }
 
@@ -288,7 +289,14 @@ section {
   .contact-section {
     @include displaygridaligntitemcenter;
     grid-template-rows: 130px 140px 200px;
-    justify-items: center;  
+    justify-items: center;
+    padding-top: 2%;  
   }
+
+  section {
+    height: 799px;
+    scroll-snap-align: start;
+  }
+
 
 }
